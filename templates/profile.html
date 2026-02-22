@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ data.name }} - Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>{{ data.name }}</h1>
+    <p><b>Email:</b> {{ data.email }}</p>
+
+    <h3>About</h3>
+    <p>{{ data.about }}</p>
+
+    <h3>Skills</h3>
+    <p>{{ data.skills }}</p>
+
+    <h3>Projects</h3>
+    <p>{{ data.projects }}</p>
+
+    <a href="/download_resume">
+        <button>Download Resume (PDF)</button>
+    </a>
+</div>
+</body>
+</html>
